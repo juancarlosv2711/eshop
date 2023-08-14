@@ -1,7 +1,11 @@
 import styles from "./styles.module.scss";
-import Ad from "./ad";
+import Ad from "./Ad";
+import Main from "./Main";
+import Top from "./Top";
 export default function header (){
     return <header className={styles.header}>
         <Ad/>
+        <Top />
+        <Main />
     </header>;
 }
