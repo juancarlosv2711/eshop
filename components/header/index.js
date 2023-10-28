@@ -2,10 +2,10 @@ import styles from "./styles.module.scss";
 import Ad from "./Ad";
 import Main from "./Main";
 import Top from "./Top";
-export default function header (){
+export default function header ( {country}){
     return <header className={styles.header}>
         <Ad/>
-        <Top />
+        <Top country={country}/>
         <Main />
     </header>;
 }
